@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -7,7 +7,7 @@ body {
     justify-content: flex-start;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to top, #87ceeb 60%, #b0e0e6 100%); /* Sky background */
+    background: linear-gradient(to top, #87ceeb 60%, #b0e0e6 100%); 
   }
   
   h1 {
@@ -16,12 +16,12 @@ body {
     margin: 20px 0;
   }
   
-  /* Fading Text Animation */
+  
   .fading-text {
     font-size: 1.5rem;
     color: #024449;
     font-weight: bold;
-    margin-bottom: 200px; /* Move text higher, away from the ball */
+    margin-bottom: 200px; 
     animation: fade 3s infinite;
   }
   
@@ -34,7 +34,7 @@ body {
     }
   }
   
-  /* Basketball Styling */
+  
   .basketball {
     width: 60px;
     height: 60px;
@@ -42,11 +42,11 @@ body {
     border: 3px solid #d35400;
     border-radius: 50%;
     position: absolute;
-    bottom: 50px; /* Start close to the grass */
+    bottom: 50px; 
     animation: bounce 1.5s infinite ease-in-out;
   }
   
-  /* Add Basketball Stripes */
+  
   .basketball::before,
   .basketball::after {
     content: '';
@@ -69,22 +69,22 @@ body {
     transform: translateY(-50%);
   }
   
-  /* Bouncing Animation */
+  
   @keyframes bounce {
     0%, 100% {
-      transform: translateY(0); /* Ball touches the grass */
+      transform: translateY(0); 
     }
     50% {
-      transform: translateY(-150px); /* Ball bounces up */
+      transform: translateY(-150px); 
     }
   }
   
-  /* Grass Ground */
+  
   body::after {
     content: '';
     width: 100%;
     height: 50px;
-    background-color: #228b22; /* Grass color */
+    background-color: #228b22; 
     position: absolute;
     bottom: 0;
     left: 0;
